@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy a text to clipboard</title>
+	<script type = "text/javascript">
+	function Hello() 
+	{
+		var copyText = document.getElementById("Input")
+		copyText.select();
+		document.execCommand('copy')
+		console.log('Copied Text')
+	}
+	</script>
+</head>
+<body>
+	<input type="text" value="Hello world"id="Input"/>
+	<button onclick="Hello()">Copy Text</button>
+	<noscript>
+		you need to activate js.
+	</noscript>
+</body>
+</html>
+
